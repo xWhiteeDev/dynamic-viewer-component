@@ -9,7 +9,7 @@ export default function HourlyForecast({ currentTemperature, hour, iconType }: I
     fetchIcon(iconType)
       .then((ic) => setIcon(ic.default))
       .catch((err) => console.error(err));
-  }, []);
+  }, [iconType]);
   return (
     <div className="Weather-forecast-hourly-forecast">
       <img src={icon} alt="" />

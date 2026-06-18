@@ -42,7 +42,7 @@ export type TIcon =
     | 'uv-index';
 
 
-export interface ICityWeather extends Omit<ICurrentCity,'name'> {}
+export type ICityWeather = Omit<ICurrentCity, 'name'>;
 export interface ICurrentCity {
     name: string
     currentConditions: ICurrentConditions;
@@ -82,7 +82,7 @@ interface ICurrentConditions {
 }
 
 export interface IHour {
-    [key: string]: any;
+    [key: string]: unknown;
 }
 
 export interface IDay {

@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 import "../styles/WeatherInput.css";
 import type { ISearchBar } from "../interfaces/ISearchBar";
 export default function SearchBar({ onConfirm, children }: ISearchBar) {

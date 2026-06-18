@@ -63,11 +63,19 @@ export default function Weather() {
 
     if (direction == "left") {
       ref.current.scrollLeft -= scrollMove;
-      ref.current.scrollLeft <= 0 ? setScrollButtonState({ right: true, left: false }) : setScrollButtonState((prev) => ({ ...prev, right: true }));
+      if (ref.current.scrollLeft <= 0) {
+        setScrollButtonState({ right: true, left: false });
+      } else {
+        setScrollButtonState((prev) => ({ ...prev, right: true }));
+      }
     } else {
       const newScroll = ref.current.scrollLeft + scrollMove;
       ref.current.scrollLeft = newScroll;
-      newScroll + ref.current.clientWidth >= ref.current.scrollWidth ? setScrollButtonState({ right: false, left: true }) : setScrollButtonState((prev) => ({ ...prev, left: true }));
+      if (newScroll + ref.current.clientWidth >= ref.current.scrollWidth) {
+        setScrollButtonState({ right: false, left: true });
+      } else {
+        setScrollButtonState((prev) => ({ ...prev, left: true }));
+      }
     }
   }
 

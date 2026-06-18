@@ -10,7 +10,7 @@ export default function Card({ type, result, iconType }: ICard) {
     fetchIcon(iconType)
       .then((res) => setIcon(res.default))
       .catch((err) => console.error(err));
-  }, []);
+  }, [iconType]);
   return (
     <div className="Weather-board-card">
       <div className="Weather-board-card-icon">
