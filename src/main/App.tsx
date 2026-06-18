@@ -21,17 +21,24 @@ let notificationKey: number = 0;
 
 function App() {
   const [ActiveComponent, setActiveComponent] = useState<React.ComponentType>();
-  const [activeNotifications, setActiveNotification] = useState<INotify[]>([]) 
+  const [activeNotifications, setActiveNotification] = useState<INotify[] | undefined>([]);
 
   function addNotify({ type, message, code, codeSubName }: INotify) {
     setActiveNotification((prev) => {
       notificationKey++;
-      if (prev.length >= 5) {
-        prev = prev.slice(1);
+      if (prev) {
+        if (prev.length >= 5) {
+          prev = prev.slice(1);
+          return [...prev, { type, message, code, codeSubName, notifyIndex: notificationKey }];
+        }
         return [...prev, { type, message, code, codeSubName, notifyIndex: notificationKey }];
       }
-      return [...prev, { type, message, code, codeSubName, notifyIndex: notificationKey }];
     });
+    if (activeNotifications) {
+      setTimeout(() => {
+        setActiveNotification(undefined);
+      }, 10000);
+    }
   }
 
   async function onComponentClick(filePath: string) {
@@ -65,9 +72,8 @@ function App() {
         <AppContext.Provider value={addNotify}>{ActiveComponent && <ActiveComponent />}</AppContext.Provider>
       </div>
       <div className="react-notifications">
-        {activeNotifications.map((notify) => (
-          <Notify key={notify.notifyIndex} type={notify.type} message={notify.message} code={notify.code} codeSubName={notify.codeSubName} />
-        ))}
+        {activeNotifications &&
+          activeNotifications.map((notify) => <Notify key={notify.notifyIndex} type={notify.type} message={notify.message} code={notify.code} codeSubName={notify.codeSubName} />)}
       </div>
       <div className="script-info">
         <span className="script-info-version">Beta version</span>
