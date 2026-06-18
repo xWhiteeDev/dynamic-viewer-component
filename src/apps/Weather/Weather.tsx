@@ -50,7 +50,6 @@ export default function Weather() {
       const dailyForecast = data.days.find((el) => el.datetime === getActualDate()) ?? data.days[0];
       setForecastToday(dailyForecast);
       setSuggestCities([]);
-      console.log(dailyForecast,data)
     } catch (error) {
       console.error(error)
       if (error instanceof CustomError) {
