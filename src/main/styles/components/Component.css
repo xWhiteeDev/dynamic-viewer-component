@@ -1,0 +1,26 @@
+.Sidebar-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    border-bottom: 2px solid gray;
+}
+
+.Sidebar-component-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    text-align: center;
+    width: 15%;
+}
+
+.Sidebar-component-logo img {
+    width: 1.2vw;
+    aspect-ratio: 1.1/1;
+}
+
+.Sidebar-component:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.Sidebar-label {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(71, 179, 179, 0.836);
+    text-align: center;
+}
+
+.Sidebar-label span {
+   margin-left: 5%;
+}

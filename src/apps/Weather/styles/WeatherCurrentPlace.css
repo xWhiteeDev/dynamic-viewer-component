@@ -1,0 +1,33 @@
+.Weather-board-currentplace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    /* background-color: green; */
+    color: white;
+}
+
+.Weather-board-currentplace span {
+    font-size: 1.4rem;
+}
+
+.Weather-board-currentplace .city-name {
+    font-size: 2.6rem;
+    font-weight: 200;
+}
+
+.Weather-board-currentplace .forecasted-temp {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.Weather-board-currentplace .actual-temp {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.Weather-board-currentplace .feels-like-temp {
+    font-size: 1.2rem;
+    font-weight: 200;
+}

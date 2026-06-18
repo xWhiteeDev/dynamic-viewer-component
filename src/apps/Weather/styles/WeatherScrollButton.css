@@ -1,0 +1,12 @@
+.Weather-scroll-button {
+    position: absolute;
+    background-color: rgba(96, 170, 230, 0.753);
+    width: 2.5%;
+    top: 58%;
+    aspect-ratio: 1/1;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}

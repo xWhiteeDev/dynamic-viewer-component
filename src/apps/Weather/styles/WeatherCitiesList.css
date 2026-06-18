@@ -1,0 +1,17 @@
+.Weather-board-cities-list {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(121, 121, 121, 0.699);
+    width: 23.5%;
+    max-height: 15vh;
+    right: 5%;
+    top: 9.6%;
+    overflow-y: auto;
+}
+.Weather-board-cities-list::-webkit-scrollbar {
+    background-color: rgba(53, 53, 53, 0.5);
+    width: 0.3vw;
+}
+.Weather-board-cities-list::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 20, 20);
+}

@@ -1,0 +1,47 @@
+.Weather-board {
+    position: absolute;
+    width: 60vw;
+    min-height: 71vh;
+    background: linear-gradient(2deg, rgba(255, 255, 255, 0.575) 0%, rgb(232, 232, 232) 100%);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.Weather-board-grid-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(2, 86, 242, 0.47) 0%, rgba(56, 162, 255, 0.9) 100%);
+}
+
+.Weather-board-grid-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8%;
+
+}
+
+.Weather-board-grid-third {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 60vw;
+    background-color: rgba(240, 240, 240, 0.404);
+    border-bottom: 1px solid gray;
+}
+
+.Weather-board-grid-fourth {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.404);
+}

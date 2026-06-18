@@ -1,0 +1,32 @@
+.notification-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 11vh;
+    transform: translateX(150%);
+    border: 2px solid rgb(85, 85, 85);
+    color: white;
+    margin: 2%;
+    box-shadow: -4px 0px 1px 1px rgba(255, 36, 36, 0.274);
+    animation: notification-slide 1s ease 0s 1 normal forwards;
+
+}
+
+.notification-type {
+    color: white;
+    font-weight: 600;
+    margin: 2%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.671);
+}
+
+@keyframes notification-slide {
+    from {
+        transform: translateX(150%);
+
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

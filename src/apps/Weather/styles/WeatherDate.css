@@ -1,0 +1,14 @@
+
+.Weather-board-date-info {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    height: 55%;
+    margin: 5%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 11px;
+    color: rgba(255, 255, 255, 0.781);
+}
+

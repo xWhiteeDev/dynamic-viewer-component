@@ -1,0 +1,33 @@
+.Weather-board-searchbar {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: none;
+    grid-column: 3/4;
+    /* background-color: green; */
+}
+
+.Weather-board-searchbar input {
+    height: 25%;
+    width: 70%;
+    margin-top: 5%;
+    background: #ffffff77;
+    color: #000;
+    outline: none;
+    text-indent: 2%;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s linear;
+    border: none;
+}
+
+.Weather-board-searchbar input::placeholder {
+    color: #00000079;
+    text-indent: 2%;
+    font-size: 1rem;
+}
+
+::selection {
+    background-color: rgba(184, 184, 184, 0.726);
+}

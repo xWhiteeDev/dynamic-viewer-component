@@ -1,0 +1,23 @@
+.Weather-board-list-city-suggestion {
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 100%;
+    height: 4.7vh;
+    border-bottom: 1px solid gray;
+    font-size: 0.7rem;
+    text-indent: 2%;
+
+}
+
+.Weather-board-list-cityname {
+    font-weight: 600;
+
+}
+
+.Weather-board-list-city-suggestion:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
